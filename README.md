@@ -24,10 +24,11 @@ This is my solution to the [Static Site Server project](https://roadmap.sh/proje
 
 ## Prerequisites
 
-- A remote server with configured SSH access
+- A remote server (Ubuntu Server 22.04) with configured SSH access
 
 ## Statis Site Server Setup Steps
 
+0. SSH to your remote server
 1. Install NGINX Open Source
 - Update and install NGINX with `apt`
 ```bash
@@ -37,6 +38,11 @@ sudo apt update && sudo apt install nginx -y
 ```bash
 sudo nginx -v
 ```
+- Check nginx.service status
+```bash
+sudo systemctl status nginx
+```
+- Now you can open the **Welcome to nginx!** page by typing the IP address of your server in the address bar of your browser
 
 ## Author
 
