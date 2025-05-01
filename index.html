@@ -1,0 +1,62 @@
+<!-- AI generated HTML-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Disco Cat Party</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="disco-box" id="discoBox">
+    <div class="ascii-art" id="asciiCat">
+      <div class="line disco-line"> /\_/\ </div>
+      <div class="line disco-line"> ( o.o ) </div>
+      <div class="line disco-line"> &gt; ^ &lt; </div>
+      <div class="line disco-line"> / \ </div>
+    </div>
+  </div>
+
+  <button onclick="startParty()">Let's go party!</button>
+
+  <div class="message-container">
+    <div class="dancer left-dancer">(&gt;^_^)&gt;</div>
+    <div class="main-message">Dance time!</div>
+    <div class="dancer right-dancer">&lt;(^_^&lt;)</div>
+  </div>
+
+  <audio id="discoMusic" src="assets/388278__klavo1985__harder-rave-final-by-kris-klavenes.wav"></audio>
+
+  <script>
+    function startParty() {
+      const elements = {
+        cat: document.getElementById('asciiCat'),
+        box: document.getElementById('discoBox'),
+        dancers: document.querySelectorAll('.dancer'),
+        message: document.querySelector('.main-message'),
+        music: document.getElementById('discoMusic')
+      };
+
+      elements.music.currentTime = 0;
+      elements.music.play();
+
+      elements.cat.classList.add('party-mode');
+      elements.box.classList.add('disco-mode');
+
+      elements.dancers.forEach(d => d.classList.add('dance'));
+      elements.message.classList.add('pulse');
+
+      setTimeout(() => {
+        elements.cat.classList.remove('party-mode');
+        elements.box.classList.remove('disco-mode');
+        elements.dancers.forEach(d => d.classList.remove('dance'));
+        elements.message.classList.remove('pulse');
+        elements.music.pause();
+      }, 7000);
+    }
+  </script>
+</body>
+
+</html>

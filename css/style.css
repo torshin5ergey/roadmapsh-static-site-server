@@ -1,0 +1,238 @@
+/* AI generated CSS */
+
+body {
+  background: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background-image: radial-gradient(circle, #2a2a2a 10%, #1a1a1a 90%);
+}
+
+.disco-box {
+  background: #000;
+  padding: 2rem;
+  border-radius: 15px;
+  border: 3px solid #ffffff;
+  margin-bottom: 2rem;
+  transition: all 0.3s;
+}
+
+.ascii-art {
+  color: #ffffff;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  transition: all 0.3s;
+  transform-origin: center;
+}
+
+.line {
+  white-space: pre;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  background: linear-gradient(45deg, #ff69b4, #7fff00);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  transform: scale(1.1) rotate(3deg);
+  background: linear-gradient(45deg, #7fff00, #ff69b4);
+}
+
+.message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.dancer {
+  font-size: 2rem;
+  color: #7fff00;
+  text-shadow: 0 0 15px #7fff00;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.main-message {
+  font-size: 2rem;
+  color: #ff69b4;
+  text-shadow: 0 0 20px #ff69b4;
+  opacity: 0;
+}
+
+@keyframes discoLights {
+  0% {
+    box-shadow: 0 0 20px #ff69b4;
+  }
+
+  25% {
+    box-shadow: 0 0 20px #7fff00;
+  }
+
+  50% {
+    box-shadow: 0 0 20px #00ffff;
+  }
+
+  75% {
+    box-shadow: 0 0 20px #ff4500;
+  }
+}
+
+@keyframes catDance {
+  0% {
+    transform: rotate(-5deg) translateY(0);
+  }
+
+  50% {
+    transform: rotate(5deg) translateY(-10px);
+  }
+
+  100% {
+    transform: rotate(-5deg) translateY(0);
+  }
+}
+
+@keyframes sideDanceLeft {
+  0% {
+    transform: translateX(0) rotate(0deg) scaleX(1);
+    filter: hue-rotate(0deg);
+  }
+
+  25% {
+    transform: translateX(-15px) rotate(-5deg) scaleX(-1);
+    filter: hue-rotate(90deg);
+  }
+
+  50% {
+    transform: translateX(15px) rotate(5deg) scaleX(-1);
+    filter: hue-rotate(180deg);
+  }
+
+  75% {
+    transform: translateX(-10px) rotate(-2deg) scaleX(1);
+    filter: hue-rotate(270deg);
+  }
+
+  100% {
+    transform: translateX(0) rotate(0deg) scaleX(1);
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes sideDanceRight {
+  0% {
+    transform: translateX(0) rotate(0deg) scaleX(1);
+    filter: hue-rotate(0deg);
+  }
+
+  25% {
+    transform: translateX(15px) rotate(5deg) scaleX(1);
+    filter: hue-rotate(90deg);
+  }
+
+  50% {
+    transform: translateX(-15px) rotate(-5deg) scaleX(-1);
+    filter: hue-rotate(180deg);
+  }
+
+  75% {
+    transform: translateX(10px) rotate(2deg) scaleX(-1);
+    filter: hue-rotate(270deg);
+  }
+
+  100% {
+    transform: translateX(0) rotate(0deg) scaleX(1);
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes messagePulse {
+  0% {
+    transform: scale(1) rotate(-3deg);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scale(1.2) rotate(3deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(-3deg);
+    opacity: 0.8;
+  }
+}
+
+.party-mode {
+  animation: catDance 0.6s ease-in-out infinite;
+}
+
+.disco-mode {
+  animation: discoLights 0.8s infinite;
+}
+
+.left-dancer.dance {
+  animation: sideDanceLeft 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  opacity: 1;
+}
+
+.right-dancer.dance {
+  animation: sideDanceRight 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  opacity: 1;
+}
+
+.pulse {
+  animation: messagePulse 1.4s ease-in-out infinite;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .disco-box {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .dancer {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+
+  .ascii-art {
+    font-size: 12px;
+  }
+}
+
+.disco-box:hover {
+  transform: scale(1.02);
+}
+
+.dancer:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
