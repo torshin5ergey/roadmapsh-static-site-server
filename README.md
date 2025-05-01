@@ -16,13 +16,13 @@ This is my solution to the [Static Site Server project](https://roadmap.sh/proje
 
 ## Project Requirements
 
-- Register and setup a remote linux server on any provider.
-- Make sure that you can connect to your server using SSH.
-- Install and configure nginx to serve a static site.
-- Create a simple webpage with basic HTML, CSS and image files.
-- Use rsync to update a remote server with a local static site.
-- If you have a domain name, point it to your server and serve your static site from there. Alternatively, set up your nginx server to serve the static site from the server’s IP address.
-- Write a script `deploy.sh` which when you run will use rsync to sync your static site to the server.
+- [x] Register and setup a remote linux server on any provider.
+- [x] Make sure that you can connect to your server using SSH.
+- [x] Install and configure nginx to serve a static site.
+- [x] Create a simple webpage with basic HTML, CSS and image files.
+- [x] Use rsync to update a remote server with a local static site.
+- [x] If you have a domain name, point it to your server and serve your static site from there. *Alternatively*, set up your nginx server to serve the static site from the server’s IP address.
+- [x] Write a script `deploy.sh` which when you run will use rsync to sync your static site to the server.
 
 ## Prerequisites
 
