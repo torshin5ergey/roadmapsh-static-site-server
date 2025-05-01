@@ -7,6 +7,7 @@ This is my solution to the [Static Site Server project](https://roadmap.sh/proje
 - [Project Requirements](#project-requirements)
 - [Prerequisites](#prerequisites)
 - [Statis Site Server Setup Steps](#statis-site-server-setup-steps)
+- [Credits](#credits)
 - [Author](#author)
 
 ## References
@@ -43,6 +44,10 @@ sudo nginx -v
 sudo systemctl status nginx
 ```
 - Now you can open the **Welcome to nginx!** page by typing the IP address of your server in the address bar of your browser
+
+## Credits
+
+- HARDER RAVE FINAL BY KRIS KLAVENES.wav by klavo1985 -- https://freesound.org/s/388278/ -- License: Attribution 4.0
 
 ## Author
 
