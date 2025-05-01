@@ -3,10 +3,15 @@
 This is my solution to the [Static Site Server project](https://roadmap.sh/projects/static-site-server) in the [DevOps roadmap](https://roadmap.sh/devops) from [roadmap.sh](https://roadmap.sh/)
 
 **Table of Contents**
+- [References](#references)
 - [Project Requirements](#project-requirements)
 - [Prerequisites](#prerequisites)
 - [Statis Site Server Setup Steps](#statis-site-server-setup-steps)
 - [Author](#author)
+
+## References
+
+- [Installing NGINX Open Source](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/)
 
 ## Project Requirements
 
@@ -23,6 +28,15 @@ This is my solution to the [Static Site Server project](https://roadmap.sh/proje
 
 ## Statis Site Server Setup Steps
 
+1. Install NGINX Open Source
+- Update and install NGINX with `apt`
+```bash
+sudo apt update && sudo apt install nginx -y
+```
+- Verify installation
+```bash
+sudo nginx -v
+```
 
 ## Author
 
