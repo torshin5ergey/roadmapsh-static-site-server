@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SERVER_USER="admin"
-SERVER_IP="192.168.0.42"
+SERVER_USER="username"
+SERVER_IP="hostip"
 SERVER_PORT="22"
 SOURCE_DIR="./website"
 TARGET_DIR="/var/www/html/"
