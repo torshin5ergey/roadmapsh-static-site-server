@@ -22,6 +22,7 @@ This is my solution to the [Static Site Server project](https://roadmap.sh/proje
 - Create a simple webpage with basic HTML, CSS and image files.
 - Use rsync to update a remote server with a local static site.
 - If you have a domain name, point it to your server and serve your static site from there. Alternatively, set up your nginx server to serve the static site from the server’s IP address.
+- Write a script `deploy.sh` which when you run will use rsync to sync your static site to the server.
 
 ## Prerequisites
 
